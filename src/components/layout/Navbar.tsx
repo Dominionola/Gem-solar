@@ -42,9 +42,13 @@ export function Navbar() {
             <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    {/* Placeholder for Logo Image */}
-                    <div className="font-montserrat font-bold text-2xl text-[#0057A0] tracking-tight">
-                        GemSolar
+                    <div className="relative h-12 w-40">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src="/images/logo.png"
+                            alt="GemSolar Logo"
+                            className="h-full w-full object-contain object-left"
+                        />
                     </div>
                 </Link>
 

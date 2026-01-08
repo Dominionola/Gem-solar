@@ -24,9 +24,9 @@ export function Hero() {
             <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col pt-28 md:pt-32">
                 <motion.div
                     className="max-w-4xl mx-auto space-y-6 text-center"
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} // Smoother custom bezier
                 >
                     <h1 className="font-montserrat font-bold text-4xl md:text-6xl leading-tight text-[#0057A0]">
                         Power Your Home. <br className="hidden md:block" />
@@ -42,9 +42,6 @@ export function Hero() {
                             <a href="https://wa.me/2348051307748" target="_blank" rel="noopener noreferrer">
                                 Get a Free Quote
                             </a>
-                        </Button>
-                        <Button variant="outline" size="lg" className="border-2 border-[#0057A0] text-[#0057A0] hover:bg-blue-50 text-lg px-8 py-6 font-semibold">
-                            See Our Work
                         </Button>
                     </div>
                 </motion.div>
