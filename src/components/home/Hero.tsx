@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
     return (
-        <section className="relative w-full min-h-[90vh] flex items-center">
+        <section className="relative w-full min-h-[90vh]">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -15,13 +15,13 @@ export function Hero() {
                     fill
                     className="object-cover object-center"
                     priority // Critical for LCP as per SEO Strategy
-                    quality={90}
+                    quality={100}
                 />
                 {/* Gradient Overlay Removed as per request */}
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-start pt-32 md:pt-48">
+            <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col pt-28 md:pt-32">
                 <motion.div
                     className="max-w-4xl mx-auto space-y-6 text-center"
                     initial={{ opacity: 0, y: 20 }}
