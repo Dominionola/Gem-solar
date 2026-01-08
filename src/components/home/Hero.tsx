@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
     return (
-        <section className="relative w-full min-h-[90vh]">
+        <section className="relative w-full min-h-screen">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
